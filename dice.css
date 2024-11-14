@@ -1,0 +1,53 @@
+.diceContainer {
+    width: 20vw;
+}
+
+#dice {
+    width: 90vmin;
+    max-width: 110px;
+    aspect-ratio: 10 / 10;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    background: #00B4DB;
+    background: -webkit-linear-gradient(to top, #0083B0, #00B4DB);
+    background: linear-gradient(to top, #0083B0, #00B4DB);
+}
+
+#dice>div {
+    border-radius: 50%;
+    background: #FFEFBA;
+    background: -webkit-linear-gradient(to top, #FFFFFF, #FFEFBA);
+    background: linear-gradient(to top, #FFFFFF, #FFEFBA);
+    box-shadow: inset 0 0 3px 1px rgba(95, 93, 93, 0.466);
+}
+
+#dot1 {
+    grid-area: 2/2/3/3;
+}
+
+#dot2 {
+    grid-area: 2/6/3/7;
+}
+
+#dot3 {
+    grid-area: 4/2/5/3;
+}
+
+#dot4 {
+    grid-area: 4/4/5/5;
+    display: none;
+}
+
+#dot5 {
+    grid-area: 4/6/5/7;
+}
+
+#dot6 {
+    grid-area: 6/2/7/3;
+}
+
+#dot7 {
+    grid-area: 6/6/7/7;
+}

@@ -1,0 +1,334 @@
+main {
+    height: 90vmin;
+    aspect-ratio: 10 / 10;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+}
+
+.rounded-circle {
+    box-shadow: 0 0 3px 1px rgba(128, 128, 128, 0.3);
+}
+
+/* Winner */
+
+.winner {
+    grid-area: 7/7/8/8;
+    transform: scale(1.3);
+}
+
+/* Houses */
+
+.yellow {
+    grid-area: 1/1/6/6;
+    background: #FEC007;
+    background: -webkit-radial-gradient(#FEF2CC55, #FEC007 80%);
+}
+
+.red {
+    grid-area: 1/9/6/14;
+    background: #DC3545;
+    background: -webkit-radial-gradient(#EECFD155, #DC3545 80%);
+}
+
+.blue {
+    grid-area: 9/1/14/6;
+    background: #0D6EFD;
+    background: -webkit-radial-gradient(#CEE1FE55, #0D6EFD 80%);
+}
+
+.green {
+    grid-area: 9/9/14/14;
+    background: #198754;
+    background: -webkit-radial-gradient(#CFE4DA55, #198754 80%);
+}
+
+/* Road */
+
+.y-road {
+    grid-area: 6/1/9/6;
+}
+
+.r-road {
+    grid-area: 1/6/6/9;
+}
+
+.b-road {
+    grid-area: 9/6/14/9;
+}
+
+.g-road {
+    grid-area: 6/9/9/14;
+}
+
+/* Stripe */
+
+.y-stripe {
+    grid-area: 7/2/8/6;
+}
+
+.r-stripe {
+    grid-area: 2/7/6/8;
+}
+
+.b-stripe {
+    grid-area: 9/7/13/8;
+}
+
+.g-stripe {
+    grid-area: 7/9/8/13;
+}
+
+/* Start */
+
+.y-start {
+    grid-area: 6/2/7/3;
+}
+
+.r-start {
+    grid-area: 2/8/3/9;
+}
+
+.b-start {
+    grid-area: 12/6/13/7;
+}
+
+.g-start {
+    grid-area: 8/12/8/13;
+}
+
+/* Safe */
+
+.safe {
+    width: 4vmin;
+    aspect-ratio: 10 /10;
+    align-self: center;
+    justify-self: center;
+    border-radius: 1em;
+    border: 2px dashed #999;
+}
+
+.y-safe {
+    grid-area: 8/2/9/3;
+}
+
+.r-safe {
+    grid-area: 2/6/3/7;
+}
+
+.b-safe {
+    grid-area: 12/8/13/9;
+}
+
+.g-safe {
+    grid-area: 6/12/7/13;
+}
+
+/* Goal */
+
+.y-goal {
+    grid-area: 6/6/9/7;
+    border-bottom: 11vmin solid transparent;
+    border-top: 11vmin solid transparent;
+    border-left: 5vmin solid #FFC107;
+}
+
+.r-goal {
+    grid-area: 6/6/7/9;
+    border-left: 11vmin solid transparent;
+    border-right: 11vmin solid transparent;
+    border-top: 5vmin solid #D93444;
+}
+
+.b-goal {
+    grid-area: 8/6/9/9;
+    border-left: 11vmin solid transparent;
+    border-right: 11vmin solid transparent;
+    border-bottom: 5vmin solid #0D6EFD;
+}
+
+.g-goal {
+    grid-area: 6/8/9/9;
+    border-bottom: 11vmin solid transparent;
+    border-top: 11vmin solid transparent;
+    border-right: 5vmin solid #198754;
+}
+
+/* Table */
+td {
+    border: 1px dashed #00000022;
+}
+
+.y-table {
+    grid-area: 6/1/9/6;
+}
+
+.r-table {
+    grid-area: 1/6/6/9;
+}
+
+.b-table {
+    grid-area: 9/6/14/9;
+}
+
+.g-table {
+    grid-area: 6/9/9/14;
+}
+
+/* grid-area: rs/cs/re/ce; */
+
+
+/* Home */
+
+/* Yellow Home */
+
+.y-home1 {
+    grid-area: 2/2/3/3;
+}
+
+.y-home2 {
+    grid-area: 2/4/3/5;
+}
+
+.y-home3 {
+    grid-area: 4/2/5/3;
+}
+
+.y-home4 {
+    grid-area: 4/4/5/5;
+}
+
+/* Red Home */
+
+.r-home1 {
+    grid-area: 2/10/3/11;
+}
+
+.r-home2 {
+    grid-area: 2/12/3/13;
+}
+
+.r-home3 {
+    grid-area: 4/10/5/11;
+}
+
+.r-home4 {
+    grid-area: 4/12/5/13;
+}
+
+/* Blue Home */
+
+.b-home1 {
+    grid-area: 10/2/11/3;
+}
+
+.b-home2 {
+    grid-area: 10/4/11/5;
+}
+
+.b-home3 {
+    grid-area: 12/2/13/3;
+}
+
+.b-home4 {
+    grid-area: 12/4/13/5;
+}
+
+/* Green Home */
+
+.g-home1 {
+    grid-area: 10/10/11/11;
+}
+
+.g-home2 {
+    grid-area: 10/12/11/13;
+}
+
+.g-home3 {
+    grid-area: 12/10/13/11;
+}
+
+.g-home4 {
+    grid-area: 12/12/13/13;
+}
+
+/* Players */
+
+.player {
+    width: 3.5vmin;
+    aspect-ratio: 10 /10;
+    align-self: center;
+    justify-self: center;
+    transform: rotate(45deg);
+    box-shadow: 0 0 2px 1px #ccc;
+}
+
+#y-player1 {
+    grid-area: 6/2/7/3;
+}
+
+#y-player2 {
+    grid-area: 2/4/3/5;
+}
+
+#y-player3 {
+    grid-area: 4/2/5/3;
+}
+
+#y-player4 {
+    grid-area: 4/4/5/5;
+}
+
+
+#r-player1 {
+    grid-area: 2/8/3/9;
+}
+
+#r-player2 {
+    grid-area: 2/12/3/13;
+}
+
+#r-player3 {
+    grid-area: 4/10/5/11;
+}
+
+#r-player4 {
+    grid-area: 4/12/5/13;
+}
+
+
+#b-player1 {
+    grid-area: 12/6/13/7;
+}
+
+#b-player2 {
+    grid-area: 10/4/11/5;
+}
+
+#b-player3 {
+    grid-area: 12/2/13/3;
+}
+
+#b-player4 {
+    grid-area: 12/4/13/5;
+}
+
+
+#g-player1 {
+    grid-area: 8/12/9/13;
+}
+
+#g-player2 {
+    grid-area: 10/12/11/13;
+}
+
+#g-player3 {
+    grid-area: 12/10/13/11;
+}
+
+#g-player4 {
+    grid-area: 12/12/13/13;
+}
+
+
+/* grid-area: rs/cs/re/ce; */
